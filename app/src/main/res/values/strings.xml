@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">BinBuddy</string>
+    <string name="button">Button</string>
 </resources>
