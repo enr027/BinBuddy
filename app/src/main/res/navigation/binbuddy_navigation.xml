@@ -13,6 +13,12 @@
         <action
             android:id="@+id/navigateToCreateAcc"
             app:destination="@id/createAccountFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_userHome"
+            app:destination="@id/userHome" />
+        <action
+            android:id="@+id/action_loginFragment_to_companyHome"
+            app:destination="@id/companyHome" />
     </fragment>
     <fragment
         android:id="@+id/createAccountFragment"
@@ -23,5 +29,15 @@
             android:id="@+id/navigateBackToLogin"
             app:destination="@id/loginFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/userHome"
+        android:name="com.example.binbuddy.UserHome"
+        android:label="fragment_user_home"
+        tools:layout="@layout/fragment_user_home" />
+    <fragment
+        android:id="@+id/companyHome"
+        android:name="com.example.binbuddy.CompanyHome"
+        android:label="fragment_company_home"
+        tools:layout="@layout/fragment_company_home" />
 
 </navigation>

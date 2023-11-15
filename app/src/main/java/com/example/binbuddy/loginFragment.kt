@@ -22,7 +22,4 @@ class loginFragment : Fragment(R.layout.fragment_login) {
 
     }
 
-
-
-
 }
