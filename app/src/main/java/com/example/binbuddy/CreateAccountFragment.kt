@@ -21,7 +21,8 @@ class CreateAccountFragment : Fragment(R.layout.fragment_create_account) {
         binding = FragmentCreateAccountBinding.bind(view)
 
         binding.butNewAcc.setOnClickListener {
-            if (binding.EtEnterFirstName.text.isNotBlank() && binding.EtEnterLastName.text.isNotBlank()
+            if (binding.EtEmail.text.isNotBlank() && binding.EtPassWord.text.isNotBlank() &&
+                binding.EtEnterFirstName.text.isNotBlank() && binding.EtEnterLastName.text.isNotBlank()
                 && binding.EtEnterDirection.text.isNotBlank() && binding.EtNumberOfBins.text.isNotBlank()) {
                 Navigation.findNavController(view).navigate(R.id.navigateBackToLogin)
             }else{
