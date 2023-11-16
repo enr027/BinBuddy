@@ -20,6 +20,14 @@ class loginFragment : Fragment(R.layout.fragment_login) {
             Navigation.findNavController(view).navigate(R.id.navigateToCreateAcc)
         }
 
+        binding.butUserLogin.setOnClickListener {
+            Navigation.findNavController(view).navigate(R.id.navigateToUserHome)
+        }
+
+        binding.butCompanyLogin.setOnClickListener {
+            Navigation.findNavController(view).navigate(R.id.navigateToCompanyHome)
+        }
+
     }
 
 }
