@@ -2,11 +2,29 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+
+    <item
+        android:id="@+id/menuFAQ"
+        android:title="FAQ"
+        android:icon="@drawable/baseline_help_24"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/menuMAP"
+        android:title="Map"
+        android:icon="@drawable/baseline_map_24"
+        app:showAsAction="always"/>
+
     <item
         android:id="@+id/menuNotifications"
         android:title="Notifications"
         android:icon="@drawable/baseline_circle_notifications_24"
         app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menuSettings"
+        android:title="Settings"
+        android:icon="@drawable/baseline_menu_24"
+        app:showAsAction="always"/>
 
 
 </menu>
