@@ -28,7 +28,8 @@
         tools:layout="@layout/fragment_create_account" >
         <action
             android:id="@+id/navigateBackToLogin"
-            app:destination="@id/loginFragment" />
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/loginFragment" />
     </fragment>
 
     <fragment
@@ -53,7 +54,8 @@
         tools:layout="@layout/fragment_f_a_q" >
         <action
             android:id="@+id/FAQBackToUserHome"
-            app:destination="@id/userHome" />
+            app:destination="@id/userHome"
+            app:popUpTo="@id/userHome" />
     </fragment>
 
 </navigation>
