@@ -30,7 +30,6 @@ class UserHome : Fragment(R.layout.fragment_user_home) {
             }
         }
 
-
     }
 
 

@@ -15,7 +15,8 @@
             app:destination="@id/createAccountFragment" />
         <action
             android:id="@+id/navigateToUserHome"
-            app:destination="@id/userHome" />
+            app:destination="@id/userHome"
+            app:launchSingleTop="false" />
         <action
             android:id="@+id/navigateToCompanyHome"
             app:destination="@id/companyHome" />

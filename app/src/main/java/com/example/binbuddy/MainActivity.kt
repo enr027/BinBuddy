@@ -2,6 +2,8 @@ package com.example.binbuddy
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import androidx.navigation.Navigation
 import androidx.navigation.findNavController
 import com.example.binbuddy.databinding.ActivityMainBinding
 
