@@ -50,6 +50,10 @@
         android:id="@+id/FAQ"
         android:name="com.example.binbuddy.FAQ"
         android:label="fragment_f_a_q"
-        tools:layout="@layout/fragment_f_a_q" />
+        tools:layout="@layout/fragment_f_a_q" >
+        <action
+            android:id="@+id/FAQBackToUserHome"
+            app:destination="@id/userHome" />
+    </fragment>
 
 </navigation>
