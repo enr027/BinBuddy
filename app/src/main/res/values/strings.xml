@@ -2,4 +2,30 @@
     <string name="app_name">BinBuddy</string>
     <string name="button">Button</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="faqHeader1">Where do I put my garbage?</string>
+    <string name="faqHeader2">Where are your offices located</string>
+    <string name="faqHeader3">When should I pay my bills</string>
+    <string name="faqHeader4">Where can I change my account info</string>
+    <string name="faqHeader5">Where can I file a complaint</string>
+    <string name="faqHeader6">Do you pick up on holidays</string>
+    <string name="faqHeader7">What kind of bins should I have</string>
+    <string name="faqHeader8">Do you pick up bigger tables such as tables or mattresses</string>
+    <string name="faqHeader9">Whats the maximum number of bins I can have</string>
+    <string name="faqAnswer1">All garbage should be placed in the your bins and should be at
+    the location stated in your account. Garbage should be placed in a safe environment as to not
+    cause harm to people on the road.</string>
+    <string name="faqAnswer2">Main offices are located at the UW Parkside campus in the computer
+    science lab. Our hours are 8:00 a.m to 4:00pm</string>
+    <string name="faqAnswer3">Bills should be paid by the last day of the month at the main offices
+    either in cash or car</string>
+    <string name="faqAnswer4">You can change your account info in the your settings page in the
+    app</string>
+    <string name="faqAnswer5">You can file your complaint in the app in your notifications page</string>
+    <string name="faqAnswer6">If your pickup date falls on a holiday(ex:Christmas,fourth of july)
+    the pick up date will be move the day after</string>
+    <string name="faqAnswer7">All bins should be the standard size for a garbage bin</string>
+    <string name="faqAnswer8">Bigger items such as tables or mattresses must first be reported to the
+    main offices or they will not be picked up</string>
+    <string name="faqAnswer9">There is no maximum number of bins but there will be a bigger charge as
+    you get add more bins into your account</string>
 </resources>

@@ -17,6 +17,9 @@ class UserHome : Fragment(R.layout.fragment_user_home) {
     private lateinit var binding: FragmentUserHomeBinding
         override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
+            binding = FragmentUserHomeBinding.bind(view)
+            binding.imageButton8.setOnClickListener {
+                Navigation.findNavController(view).navigate(R.id.navigateToFAQ)
+            }
     }
 }
