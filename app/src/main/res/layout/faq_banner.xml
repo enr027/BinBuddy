@@ -7,15 +7,6 @@
     android:padding="8dp">
 
 
-    <ImageView
-        android:id="@+id/imageCheckFAQ"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:src="@drawable/baseline_check_24"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
-
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/expandableDescription"
         android:layout_width="match_parent"
@@ -45,7 +36,6 @@
         android:layout_height="wrap_content"
         android:hint="This is FAQ HEADER"
         android:textSize="24dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageCheckFAQ"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageCheckFAQ" />
+        tools:layout_editor_absoluteY="24dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
