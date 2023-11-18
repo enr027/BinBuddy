@@ -8,70 +8,88 @@
 
 
     <EditText
-        android:id="@+id/etLoginEmail"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:hint="Enter Email"
-        app:layout_constraintBottom_toTopOf="@+id/etLoginPassword"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
         android:id="@+id/etLoginPassword"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_width="350dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="20dp"
         android:hint="Enter password"
         app:layout_constraintBottom_toTopOf="@+id/butUserLogin"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/etLoginEmail"
+        android:layout_width="350dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="12dp"
+        android:hint="Enter Email"
+        app:layout_constraintBottom_toTopOf="@+id/etLoginPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
+        android:id="@+id/butCreateNewAcc"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="350dp"
+        android:layout_height="57dp"
+        android:background="#5D26FB"
+        android:text="Create New Account"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.854" />
+
+    <Button
         android:id="@+id/butUserLogin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="350dp"
+        android:layout_height="57dp"
+        android:background="#2655FB"
+        android:backgroundTint="#2655FB"
         android:text="User Login"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.639"
+        app:rippleColor="#2655FB" />
+
+    <Button
+        android:id="@+id/butCompanyLogin"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="350dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="16dp"
+        android:background="#2655FB"
+        android:text="Company login"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/butUserLogin" />
+
+    <TextView
+        android:id="@+id/tvTitle1"
+        android:layout_width="251dp"
+        android:layout_height="98dp"
+        android:fontFamily="@font/kadwa"
+        android:includeFontPadding="false"
+        android:text="BinBuddy"
+        android:textColor="#000000"
+        android:textSize="50sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.5" />
-
-    <Button
-        android:id="@+id/butCompanyLogin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Company login"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/butUserLogin" />
-
-    <Button
-        android:id="@+id/butCreateNewAcc"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Create New Account"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/butCompanyLogin" />
-
-    <TextView
-        android:id="@+id/tvTitle1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:fontFamily="sans-serif-smallcaps"
-        android:includeFontPadding="false"
-        android:text="BinBuddy"
-        android:textSize="50sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintVertical_bias="0.2" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

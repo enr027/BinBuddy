@@ -15,22 +15,8 @@ import com.example.binbuddy.databinding.FragmentUserHomeBinding
 class UserHome : Fragment(R.layout.fragment_user_home) {
 
     private lateinit var binding: FragmentUserHomeBinding
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding = FragmentUserHomeBinding.bind(view)
-
-        binding.userBar.inflateMenu(R.menu.appbar)
-
-        binding.userBar.setOnMenuItemClickListener{
-            when(it.itemId) {
-                R.id.menuFAQ -> {
-                    Navigation.findNavController(view).navigate(R.id.navigateToFAQ)
-                    true
-                }else -> false
-            }
-        }
 
     }
-
-
 }
