@@ -5,6 +5,5 @@
     <item
         android:id="@+id/menuBack"
         android:title="Back Button"
-        android:icon="@drawable/baseline_arrow_back_24"
-        app:showAsAction="always"/>
+        app:showAsAction="always" />
 </menu>
