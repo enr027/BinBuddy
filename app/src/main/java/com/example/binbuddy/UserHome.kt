@@ -29,8 +29,10 @@ class UserHome : Fragment(R.layout.fragment_user_home), OnMapReadyCallback {
             binding = FragmentUserHomeBinding.bind(view)
             binding.imageButton8.setOnClickListener {
                 Navigation.findNavController(view).navigate(R.id.navigateToFAQ)
+            }
 
-
+            binding.imageButton7.setOnClickListener {
+                Navigation.findNavController(view).navigate(R.id.navigateToCalendarUser)
             }
     }
 

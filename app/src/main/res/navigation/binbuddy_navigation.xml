@@ -41,6 +41,9 @@
         <action
             android:id="@+id/navigateToFAQ"
             app:destination="@id/FAQ" />
+        <action
+            android:id="@+id/navigateToCalendarUser"
+            app:destination="@id/calandar" />
     </fragment>
 
     <fragment
@@ -55,6 +58,16 @@
         tools:layout="@layout/fragment_f_a_q" >
         <action
             android:id="@+id/FAQBackToUserHome"
+            app:destination="@id/userHome"
+            app:popUpTo="@id/userHome" />
+    </fragment>
+    <fragment
+        android:id="@+id/calandar"
+        android:name="com.example.binbuddy.Calendar"
+        android:label="fragment_calandar"
+        tools:layout="@layout/fragment_calandar" >
+        <action
+            android:id="@+id/fromUserCalendarToHome"
             app:destination="@id/userHome"
             app:popUpTo="@id/userHome" />
     </fragment>
