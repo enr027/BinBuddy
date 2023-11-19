@@ -44,6 +44,12 @@
         <action
             android:id="@+id/navigateToCalendarUser"
             app:destination="@id/calandar" />
+        <action
+            android:id="@+id/navigateToNotificationsUser"
+            app:destination="@id/userNotifications" />
+        <action
+            android:id="@+id/navigateToUserAccountMenu"
+            app:destination="@id/userAccountMenu" />
     </fragment>
 
     <fragment
@@ -70,6 +76,30 @@
             android:id="@+id/fromUserCalendarToHome"
             app:destination="@id/userHome"
             app:popUpTo="@id/userHome" />
+    </fragment>
+    <fragment
+        android:id="@+id/userNotifications"
+        android:name="com.example.binbuddy.UserNotifications"
+        android:label="fragment_user_notifications"
+        tools:layout="@layout/fragment_user_notifications" >
+        <action
+            android:id="@+id/userNotificationsBackToHome"
+            app:destination="@id/userHome"
+            app:popUpTo="@id/userHome" />
+    </fragment>
+    <fragment
+        android:id="@+id/userAccountMenu"
+        android:name="com.example.binbuddy.UserAccountMenu"
+        android:label="fragment_user_account_menu"
+        tools:layout="@layout/fragment_user_account_menu" >
+        <action
+            android:id="@+id/userAccountBackToUserHome"
+            app:destination="@id/userHome"
+            app:popUpTo="@id/userHome" />
+        <action
+            android:id="@+id/userAccountBackToLogin"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/loginFragment" />
     </fragment>
 
 </navigation>

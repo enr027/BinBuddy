@@ -34,6 +34,14 @@ class UserHome : Fragment(R.layout.fragment_user_home), OnMapReadyCallback {
             binding.imageButton7.setOnClickListener {
                 Navigation.findNavController(view).navigate(R.id.navigateToCalendarUser)
             }
+
+            binding.imageButton6.setOnClickListener {
+                Navigation.findNavController(view).navigate(R.id.navigateToNotificationsUser)
+            }
+
+            binding.imageButton.setOnClickListener {
+                Navigation.findNavController(view).navigate(R.id.navigateToUserAccountMenu)
+            }
     }
 
     override fun onMapReady(googleMap: GoogleMap) {
