@@ -73,10 +73,10 @@
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/mapFragment"
-        android:layout_width="412dp"
-        android:layout_height="508dp"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="411dp"
+        android:layout_height="411dp"
         android:layout_marginEnd="48dp"
-        class ="com.google.android.gms.maps.SupportMapFragment"
         app:layout_constraintBaseline_toBottomOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
