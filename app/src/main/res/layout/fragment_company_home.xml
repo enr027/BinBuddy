@@ -71,4 +71,18 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.02" />
 
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/mapFragment"
+        android:layout_width="412dp"
+        android:layout_height="508dp"
+        android:layout_marginEnd="48dp"
+        class ="com.google.android.gms.maps.SupportMapFragment"
+        app:layout_constraintBaseline_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        app:layout_constraintVertical_bias="1.0" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
