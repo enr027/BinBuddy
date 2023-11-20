@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "614360597049",
+    "project_id": "database-c6e65",
+    "storage_bucket": "database-c6e65.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:614360597049:android:4b491f26df3301847103e8",
+        "android_client_info": {
+          "package_name": "com.example.binbuddy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDf6l5dRsEbjrJnSxDisKkdvxaXXV4UP8k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
