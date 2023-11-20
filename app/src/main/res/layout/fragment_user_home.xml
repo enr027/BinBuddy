@@ -10,8 +10,8 @@
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/mapFragment2"
         class="com.google.android.gms.maps.SupportMapFragment"
-        android:layout_width="411dp"
-        android:layout_height="411dp"
+        android:layout_width="409dp"
+        android:layout_height="259dp"
         android:layout_marginEnd="48dp"
         app:layout_constraintBaseline_toBottomOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -76,7 +76,7 @@
         app:layout_constraintVertical_bias="0.021" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/userID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="User"
@@ -100,4 +100,63 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.094" />
+
+    <ImageButton
+        android:id="@+id/addJob"
+        android:layout_width="41dp"
+        android:layout_height="37dp"
+        android:layout_marginBottom="352dp"
+        android:background="#FFFFFF"
+        android:src="@android:drawable/ic_input_add"
+        app:layout_constraintBottom_toTopOf="@+id/mapFragment2"
+        app:layout_constraintEnd_toStartOf="@+id/etTrash"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etTrash"
+        android:layout_width="276dp"
+        android:layout_height="42dp"
+        android:hint="Type Trash"
+        app:layout_constraintBottom_toTopOf="@+id/mapFragment2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.193" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etAmount"
+        android:layout_width="276dp"
+        android:layout_height="42dp"
+        android:hint="Amount"
+        app:layout_constraintBottom_toTopOf="@+id/mapFragment2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etTrash"
+        app:layout_constraintVertical_bias="0.045" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etDate"
+        android:layout_width="276dp"
+        android:layout_height="42dp"
+        android:hint="Date of Pickup"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etAmount"
+        app:layout_constraintVertical_bias="0.031" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etAddress"
+        android:layout_width="276dp"
+        android:layout_height="42dp"
+        android:hint="Address"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etAmount"
+        app:layout_constraintVertical_bias="0.135" />
 </androidx.constraintlayout.widget.ConstraintLayout>

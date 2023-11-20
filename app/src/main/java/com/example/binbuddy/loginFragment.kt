@@ -22,12 +22,16 @@ class loginFragment : Fragment(R.layout.fragment_login) {
         firebaseAuth = FirebaseAuth.getInstance()
 
         binding.butUserLogin.setOnClickListener {
+            //Store values to for login
             val email = binding.etLoginEmail.text.toString()
             val password = binding.etLoginPassword.text.toString()
 
+            //Check if fields are filled out
             if(email.isNotEmpty() && password.isNotEmpty()) {
+                //Sign in with firebase auth using email and password
                 firebaseAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener {
                     if (it.isSuccessful) {
+                        //Nav to userhome if successful
                         Navigation.findNavController(view).navigate(R.id.navigateToUserHome)
                     }
                     else
