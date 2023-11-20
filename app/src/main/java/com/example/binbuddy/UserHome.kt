@@ -9,6 +9,7 @@ import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
 import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
 
 
 class UserHome : Fragment(R.layout.fragment_user_home), OnMapReadyCallback {
@@ -22,6 +23,20 @@ class UserHome : Fragment(R.layout.fragment_user_home), OnMapReadyCallback {
             val mapFragment = childFragmentManager
                 .findFragmentById(R.id.mapFragment2) as SupportMapFragment
             mapFragment.getMapAsync(this)
+
+            val database = FirebaseDatabase.getInstance()
+            val dataRef = database.getReference("Users")
+
+
+
+
+
+            binding.addJob.setOnClickListener {
+                val trashType = binding.etTrash.text.toString()
+                val amount = binding.etAmount.text.toString()
+                val datePickUp = binding.etDate.text.toString()
+                val address = binding.etAddress.text.toString()
+            }
 
             binding = FragmentUserHomeBinding.bind(view)
             binding.imageButton8.setOnClickListener {
