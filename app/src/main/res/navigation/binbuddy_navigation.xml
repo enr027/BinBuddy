@@ -56,7 +56,17 @@
         android:id="@+id/companyHome"
         android:name="com.example.binbuddy.CompanyHome"
         android:label="fragment_company_home"
-        tools:layout="@layout/fragment_company_home" />
+        tools:layout="@layout/fragment_company_home" >
+        <action
+            android:id="@+id/companyHomeToCompanyNotifications"
+            app:destination="@id/companyNotifications" />
+        <action
+            android:id="@+id/companyHomeToCompanyCalendar"
+            app:destination="@id/companyCalendar" />
+        <action
+            android:id="@+id/companyHomeToCompanyAccount"
+            app:destination="@id/companyAccountMenu" />
+    </fragment>
     <fragment
         android:id="@+id/FAQ"
         android:name="com.example.binbuddy.FAQ"
@@ -98,6 +108,40 @@
             app:popUpTo="@id/userHome" />
         <action
             android:id="@+id/userAccountBackToLogin"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/companyNotifications"
+        android:name="com.example.binbuddy.CompanyNotifications"
+        android:label="fragment_company_notifications"
+        tools:layout="@layout/fragment_company_notifications" >
+        <action
+            android:id="@+id/companyNotificationsBackToHome"
+            app:destination="@id/companyHome"
+            app:popUpTo="@id/companyHome" />
+    </fragment>
+    <fragment
+        android:id="@+id/companyCalendar"
+        android:name="com.example.binbuddy.CompanyCalendar"
+        android:label="fragment_company_calendar"
+        tools:layout="@layout/fragment_company_calendar" >
+        <action
+            android:id="@+id/companyCalendarBackToHome"
+            app:destination="@id/companyHome"
+            app:popUpTo="@id/companyHome" />
+    </fragment>
+    <fragment
+        android:id="@+id/companyAccountMenu"
+        android:name="com.example.binbuddy.CompanyAccountMenu"
+        android:label="fragment_company_account_menu"
+        tools:layout="@layout/fragment_company_account_menu" >
+        <action
+            android:id="@+id/companyAccountMenuBackToHome"
+            app:destination="@id/companyHome"
+            app:popUpTo="@id/companyHome" />
+        <action
+            android:id="@+id/companyAccountMenuBackToLogin"
             app:destination="@id/loginFragment"
             app:popUpTo="@id/loginFragment" />
     </fragment>

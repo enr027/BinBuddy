@@ -9,9 +9,21 @@
 
 
     <EditText
+        android:id="@+id/etChangeNumberBins"
+        android:layout_width="259dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginBottom="340dp"
+        android:hint="# of bins"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/etEnterDirection"
+        app:layout_constraintTop_toBottomOf="@+id/etLoginEmail2" />
+
+    <EditText
         android:id="@+id/etEnterDirection"
         android:layout_width="259dp"
         android:layout_height="55dp"
+        android:layout_marginTop="26dp"
         android:layout_marginBottom="26dp"
         android:hint="Address"
         app:layout_constraintBottom_toTopOf="@+id/button"
@@ -33,10 +45,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/btnSignOutFromUser"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7"
-        app:layout_constraintVertical_bias="0.714" />
+        app:layout_constraintVertical_bias="0.811" />
 
     <EditText
         android:id="@+id/etLoginEmail2"
@@ -45,8 +57,7 @@
         android:layout_marginBottom="388dp"
         android:hint="Enter Email"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="@+id/etChangeNumberBins" />
 
     <TextView
         android:id="@+id/textView7"

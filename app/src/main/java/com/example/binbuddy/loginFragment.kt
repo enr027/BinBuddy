@@ -32,10 +32,10 @@ class loginFragment : Fragment(R.layout.fragment_login) {
                     }
                     else
                     {
-                        Toast.makeText(context,"Please fill out all fields", Toast.LENGTH_LONG).show()
+                        Toast.makeText(context,"Please make a new account", Toast.LENGTH_LONG).show()
                     }
                 }
-            }
+            }else Toast.makeText(context,"Please fill out all fields", Toast.LENGTH_LONG).show()
         }
 
         binding.butCreateNewAcc.setOnClickListener{
