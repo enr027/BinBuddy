@@ -4,7 +4,6 @@ import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.View
 import androidx.navigation.Navigation
-import com.example.binbuddy.databinding.CalenderBinding
 import com.example.binbuddy.databinding.FragmentCalandarBinding
 
 class Calendar : Fragment(R.layout.fragment_calandar) {
