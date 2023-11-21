@@ -4,7 +4,9 @@ import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.binbuddy.databinding.FragmentUserNotificationsBinding
+import java.util.ArrayList
 
 
 class UserNotifications : Fragment(R.layout.fragment_user_notifications) {
@@ -23,5 +25,19 @@ class UserNotifications : Fragment(R.layout.fragment_user_notifications) {
                 }else -> false
             }
         }
+
+
+        val adaptorNotificationListUser = arrayListOf<NotificationsInfo>()
+        getUserNotificationsData(adaptorNotificationListUser)
+
+
+        binding.userNotificationsRecycler.layoutManager = LinearLayoutManager(context)
+        binding.userNotificationsRecycler.adapter = NotAdaptor(adaptorNotificationListUser)
+    }
+
+    private fun getUserNotificationsData(list: ArrayList<NotificationsInfo>){
+        val firstUserNotification = NotificationsInfo("Welcome to BinBuddy","You are in the notifications menu")
+        list.add(firstUserNotification)
+
     }
 }
