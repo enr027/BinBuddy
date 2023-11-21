@@ -2,11 +2,11 @@ package com.example.binbuddy
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
 import androidx.navigation.Navigation
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.binbuddy.databinding.FragmentCompanyNotificationsBinding
+import java.util.ArrayList
 
 
 class CompanyNotifications : Fragment(R.layout.fragment_company_notifications) {
@@ -25,5 +25,17 @@ class CompanyNotifications : Fragment(R.layout.fragment_company_notifications) {
                 }else -> false
             }
         }
+
+        val adaptorNotificationListCompany = arrayListOf<NotificationsInfo>()
+        getCompanyNotificationsData(adaptorNotificationListCompany)
+
+
+        binding.companyNotificationsRecycler.layoutManager = LinearLayoutManager(context)
+        binding.companyNotificationsRecycler.adapter = NotAdaptor(adaptorNotificationListCompany)
+    }
+
+    private fun getCompanyNotificationsData(list: ArrayList<NotificationsInfo>){
+        val firstCompanyNotification = NotificationsInfo("BinBuddy Employee","This is where you will receive jobs")
+        list.add(firstCompanyNotification)
     }
 }
