@@ -105,11 +105,12 @@
         android:id="@+id/addJob"
         android:layout_width="41dp"
         android:layout_height="37dp"
-        android:layout_marginBottom="352dp"
+        android:layout_marginBottom="324dp"
         android:background="#FFFFFF"
         android:src="@android:drawable/ic_input_add"
         app:layout_constraintBottom_toTopOf="@+id/mapFragment2"
         app:layout_constraintEnd_toStartOf="@+id/etTrash"
+        app:layout_constraintHorizontal_bias="0.615"
         app:layout_constraintStart_toStartOf="parent" />
 
     <com.google.android.material.textfield.TextInputEditText
