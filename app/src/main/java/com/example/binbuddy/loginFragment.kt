@@ -22,33 +22,42 @@ class loginFragment : Fragment(R.layout.fragment_login) {
         firebaseAuth = FirebaseAuth.getInstance()
 
         binding.butUserLogin.setOnClickListener {
-            //Store values to for login
             val email = binding.etLoginEmail.text.toString()
             val password = binding.etLoginPassword.text.toString()
 
             //Check if fields are filled out
-            if(email.isNotEmpty() && password.isNotEmpty()) {
+            if (email.isNotEmpty() && password.isNotEmpty()) {
                 //Sign in with firebase auth using email and password
                 firebaseAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener {
                     if (it.isSuccessful) {
                         //Nav to userhome if successful
                         Navigation.findNavController(view).navigate(R.id.navigateToUserHome)
-                    }
-                    else
+                    } else
                     {
-                        Toast.makeText(context,"Please make a new account", Toast.LENGTH_LONG).show()
+                        Toast.makeText(context, "Please make a new account", Toast.LENGTH_LONG).show()
                     }
-                }
-            }else Toast.makeText(context,"Please fill out all fields", Toast.LENGTH_LONG).show()
-        }
+                    }
+                } else Toast.makeText(context, "Please fill out all fields", Toast.LENGTH_LONG)
+                    .show()
+            }
 
         binding.butCreateNewAcc.setOnClickListener{
             Navigation.findNavController(view).navigate(R.id.navigateToCreateAcc)
         }
 
         binding.butCompanyLogin.setOnClickListener {
+            val email = binding.etLoginEmail.text.toString()
+            val password = binding.etLoginPassword.text.toString()
+
             if (binding.etLoginEmail.text.isNotBlank() && binding.etLoginPassword.text.isNotBlank()) {
-                Navigation.findNavController(view).navigate(R.id.navigateToCompanyHome)
+                if(email.contains("binbuddy") && password == "adminbuddy") {
+                    firebaseAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener {
+                        if (it.isSuccessful) {
+                            //Nav to company home if successful
+                            Navigation.findNavController(view).navigate(R.id.navigateToCompanyHome)
+                        }
+                    }
+                }
             } else {
                 Toast.makeText(context, "Please fill out all fields", Toast.LENGTH_LONG).show()
             }
