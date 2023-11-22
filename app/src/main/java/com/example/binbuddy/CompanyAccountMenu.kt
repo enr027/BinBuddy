@@ -9,14 +9,19 @@ import androidx.navigation.Navigation
 import com.example.binbuddy.databinding.FragmentCompanyAccountMenuBinding
 import com.example.binbuddy.databinding.FragmentCreateAccountBinding
 
+/**
+ * CompanyAccountMenu sets up the Company account menu
+ */
 class CompanyAccountMenu : Fragment(R.layout.fragment_company_account_menu) {
     private lateinit var binding: FragmentCompanyAccountMenuBinding
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding  = FragmentCompanyAccountMenuBinding.bind(view)
 
+        //inflate the back bar menu to be able to navigate back to company home
         binding.cAccountBackBar.inflateMenu(R.menu.backbar)
 
+        // listen to when the back bar button is clicked to navigate back to the company home
         binding.cAccountBackBar.setOnMenuItemClickListener {
             when(it.itemId){
                 R.id.menuBack ->{
@@ -26,6 +31,7 @@ class CompanyAccountMenu : Fragment(R.layout.fragment_company_account_menu) {
             }
         }
 
+        // listen to when the sign out is click to go back to login fragment
         binding.btnSignOutCompany.setOnClickListener {
             Navigation.findNavController(view).navigate(R.id.companyAccountMenuBackToLogin)
         }

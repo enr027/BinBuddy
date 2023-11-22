@@ -7,6 +7,9 @@ import androidx.navigation.Navigation
 import androidx.navigation.findNavController
 import com.example.binbuddy.databinding.ActivityMainBinding
 
+/**
+ * Main activity is where all fragments are hosted
+ */
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {

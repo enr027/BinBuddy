@@ -10,16 +10,19 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 
+/**
+ * create account fragments lets new user to create a new account
+ */
 class CreateAccountFragment : Fragment(R.layout.fragment_create_account) {
 
     private lateinit var binding: FragmentCreateAccountBinding
-    private lateinit var firebaseAuth: FirebaseAuth
-    private lateinit var database : DatabaseReference
+    private lateinit var firebaseAuth: FirebaseAuth // get authorization database
+    private lateinit var database : DatabaseReference // get database reference
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentCreateAccountBinding.bind(view)
-        firebaseAuth = FirebaseAuth.getInstance()
+        firebaseAuth = FirebaseAuth.getInstance() // get instance of authorization database
 
         binding.butNewAcc.setOnClickListener {
             //Create variables to be used for the firebase realtime database and authentic database
